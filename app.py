@@ -29,5 +29,3 @@ def download_audio():
     response = send_file(filename, mimetype='audio/mpeg')
     os.remove(filename)  # cancella il file dopo l'invio
     return response
-
-app.run(host='0.0.0.0', port=10000)
